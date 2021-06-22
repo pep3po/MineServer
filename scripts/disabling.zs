@@ -1,0 +1,16 @@
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:1>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:2>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:3>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:4>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:5>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:6>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:15>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:14>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:7>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:8>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:9>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:10>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:11>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:12>);
+mods.jei.JEI.removeAndHide(<xreliquary:pedestal:13>);
