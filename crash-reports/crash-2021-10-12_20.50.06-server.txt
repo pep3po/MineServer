@@ -1,0 +1,350 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 12/10/21 20:50
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60,00 seconds (should be max 0.05)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:43) [?:?] {re:classloading}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_281] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Thread Dump --
+Details:
+	Threads: "Netty Server IO #1" Id=61 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@12af3de5
+	-  locked java.util.Collections$UnmodifiableSet@1c68c1c0
+	-  locked sun.nio.ch.WindowsSelectorImpl@18575695
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	...
+
+
+"Server Watchdog" Id=60 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:41)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"IO-Worker-17" Id=59 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@5d55cbfb
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@5d55cbfb
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"IO-Worker-16" Id=58 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@5d55cbfb
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@5d55cbfb
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"IO-Worker-15" Id=57 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@5d55cbfb
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@5d55cbfb
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+
+"Thread-6" Id=56 RUNNABLE (in native)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(Unknown Source)
+	at sun.nio.fs.WindowsWatchService$Poller.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #0" Id=55 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@367e85a1
+	-  locked java.util.Collections$UnmodifiableSet@6cc2346f
+	-  locked sun.nio.ch.WindowsSelectorImpl@4e03249c
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	...
+
+
+"ObjectCleanerThread" Id=54 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@3d7a34b4
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@3d7a34b4
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server console handler" Id=53 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@7f6bed37
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@277cff9
+	at java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"DestroyJavaVM" Id=52 RUNNABLE
+
+
+"Snooper Timer" Id=50 WAITING on java.util.TaskQueue@55072cef
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@55072cef
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"modloading-worker-3" Id=37 TIMED_WAITING on java.util.concurrent.ForkJoinPool@39346d6f
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@39346d6f
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"modloading-worker-11" Id=29 WAITING on java.util.concurrent.ForkJoinPool@39346d6f
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@39346d6f
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"modloading-worker-2" Id=28 WAITING on java.util.concurrent.ForkJoinPool@39346d6f
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@39346d6f
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"Timer hack thread" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.util.Util$6.run(Util.java:505)
+
+
+"Thread-2" Id=17 RUNNABLE (in native)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(Unknown Source)
+	at sun.nio.fs.WindowsWatchService$Poller.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Thread-1" Id=16 TIMED_WAITING
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:190)
+
+
+"Attach Listener" Id=5 RUNNABLE
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@19162d2b
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@19162d2b
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@25a231f7
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@25a231f7
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 1, entities: 137 [minecraft:item:25,minecraft:rabbit:22,minecraft:chicken:21,minecraft:pig:17,minecraft:sheep:15], block_entities: 11 [minecraft:campfire:3,minecraft:chest:3,minecraft:bell:2,minecraft:mob_spawner:2,minecraft:brewing_stand:1], block_ticks: 78, fluid_ticks: 4, chunk_source: ServerChunkCache: 2980,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:43) [?:?] {re:classloading}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_281] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_281, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1422847616 bytes (1356 MB) / 3246391296 bytes (3096 MB) up to 7592738816 bytes (7241 MB)
+	CPUs: 12
+	JVM Flags: 0 total; 
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.8.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.8.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.8.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.8.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.8.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.8
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		zombiehorsespawn_1.16.5-2.7.jar                   |Zombie Horse Spawn            |zombiehorsespawn              |2.7                 |DONE      |Manifest: NOSIGNATURE
+		endportalrecipe_1.16.5-2.3.jar                    |End Portal Recipe             |endportalrecipe               |2.3                 |DONE      |Manifest: NOSIGNATURE
+		areas_1.16.5-2.2.jar                              |Areas                         |areas                         |2.2                 |DONE      |Manifest: NOSIGNATURE
+		milkallthemobs_1.16.5-1.4.jar                     |Milk All The Mobs             |milkallthemobs                |1.4                 |DONE      |Manifest: NOSIGNATURE
+		petnames_1.16.5-1.4.jar                           |Pet Names                     |petnames                      |1.4                 |DONE      |Manifest: NOSIGNATURE
+		superflatworldnoslimes_1.16.5-1.3.jar             |Superflat World No Slimes     |superflatworldnoslimes        |1.3                 |DONE      |Manifest: NOSIGNATURE
+		paperbooks_1.16.5-1.2.jar                         |Paper Books                   |paperbooks                    |1.2                 |DONE      |Manifest: NOSIGNATURE
+		guiclock_1.16.5-2.3.jar                           |GUI Clock                     |guiclock                      |2.3                 |DONE      |Manifest: NOSIGNATURE
+		villagernames_1.16.5-2.9.jar                      |Villager Names                |villagernames                 |2.9                 |DONE      |Manifest: NOSIGNATURE
+		realisticbees_1.16.5-1.2.jar                      |Realistic Bees                |realisticbees                 |1.2                 |DONE      |Manifest: NOSIGNATURE
+		villagerdeathmessages_1.16.5-1.8.jar              |Villager Death Messages       |villagerdeathmessages         |1.8                 |DONE      |Manifest: NOSIGNATURE
+		softerhaybales_1.16.5-1.3.jar                     |Softer Hay Bales              |softerhaybales                |1.3                 |DONE      |Manifest: NOSIGNATURE
+		quickpaths_1.16.5-1.5.jar                         |Quick Paths                   |quickpaths                    |1.5                 |DONE      |Manifest: NOSIGNATURE
+		cryingghasts_1.16.5-1.3.jar                       |Crying Ghasts                 |cryingghasts                  |1.3                 |DONE      |Manifest: NOSIGNATURE
+		skeletonhorsespawn_1.16.5-1.6.jar                 |Skeleton Horse Spawn          |skeletonhorsespawn            |1.6                 |DONE      |Manifest: NOSIGNATURE
+		betterbeaconplacement_1.16.5-1.3.jar              |Better Beacon Placement       |betterbeaconplacement         |1.3                 |DONE      |Manifest: NOSIGNATURE
+		kelpfertilizer_1.16.5-1.4.jar                     |Kelp Fertilizer               |kelpfertilizer                |1.4                 |DONE      |Manifest: NOSIGNATURE
+		huskspawn_1.16.5-1.3.jar                          |Husk Spawn                    |huskspawn                     |1.3                 |DONE      |Manifest: NOSIGNATURE
+		stackrefill_1.16.5-1.7.jar                        |Stack Refill                  |stackrefill                   |1.7                 |DONE      |Manifest: NOSIGNATURE
+		mineralchance_1.16.5-1.3.jar                      |Mineral Chance                |mineralchance                 |1.3                 |DONE      |Manifest: NOSIGNATURE
+		despawningeggshatch_1.16.5-2.2.jar                |Despawning Eggs Hatch         |despawningeggshatch           |2.2                 |DONE      |Manifest: NOSIGNATURE
+		recipecommands_1.16.5-1.1.jar                     |Recipe Commands               |recipecommands                |1.1                 |DONE      |Manifest: NOSIGNATURE
+		replantingcrops_1.16.5-2.2.jar                    |Replanting Crops              |replantingcrops               |2.2                 |DONE      |Manifest: NOSIGNATURE
+		betterspawnercontrol_1.16.5-1.3.jar               |Better Spawner Control        |betterspawnercontrol          |1.3                 |DONE      |Manifest: NOSIGNATURE
+		netherportalspread_1.16.5-5.1.jar                 |Nether Portal Spread          |netherportalspread            |5.1                 |DONE      |Manifest: NOSIGNATURE
+		zombieproofdoors_1.16.5-1.2.jar                   |Zombie Proof Doors            |zombieproofdoors              |1.2                 |DONE      |Manifest: NOSIGNATURE
+		edibles_1.16.5-2.2.jar                            |Edibles                       |edibles                       |2.2                 |DONE      |Manifest: NOSIGNATURE
+		conduitspreventdrowned_1.16.5-1.2.jar             |Conduits Prevent Drowned      |conduitspreventdrowned        |1.2                 |DONE      |Manifest: NOSIGNATURE
+		fishontheline_1.16.5-1.1.jar                      |Fish On The Line              |fishontheline                 |1.1                 |DONE      |Manifest: NOSIGNATURE
+		villagespawnpoint_1.16.5-1.5.jar                  |Village Spawn Point           |villagespawnpoint             |1.5                 |DONE      |Manifest: NOSIGNATURE
+		omegamute_1.16.5-1.7.jar                          |Omega Mute                    |omegamute                     |1.7                 |DONE      |Manifest: NOSIGNATURE
+		underwaterenchanting_1.16.5-1.3.jar               |Underwater Enchanting         |underwaterenchanting          |1.3                 |DONE      |Manifest: NOSIGNATURE
+		shulkerdropstwo_1.16.5-1.4.jar                    |Shulker Drops Two             |shulkerdropstwo               |1.4                 |DONE      |Manifest: NOSIGNATURE
+		naturallychargedcreepers_1.16.5-1.4.jar           |Naturally Charged Creepers    |naturallychargedcreepers      |1.4                 |DONE      |Manifest: NOSIGNATURE
+		collective-1.16.5-2.24.jar                        |Collective                    |collective                    |2.24                |DONE      |Manifest: NOSIGNATURE
+		firespreadtweaks_1.16.5-1.1.jar                   |Fire Spread Tweaks            |firespreadtweaks              |1.1                 |DONE      |Manifest: NOSIGNATURE
+		passiveshield_1.16.5-1.3.jar                      |Passive Shield                |passiveshield                 |1.3                 |DONE      |Manifest: NOSIGNATURE
+		starterkit_1.16.5-2.4.jar                         |Starter Kit                   |starterkit                    |2.4                 |DONE      |Manifest: NOSIGNATURE
+		sleepsooner_1.16.5-2.4.jar                        |Sleep Sooner                  |sleepsooner                   |2.4                 |DONE      |Manifest: NOSIGNATURE
+		alwaysawitherskull_1.16.5-1.3.jar                 |Always a Wither Skull         |alwaysawitherskull            |1.3                 |DONE      |Manifest: NOSIGNATURE
+		nametagtweaks_1.16.5-1.5.jar                      |Name Tag Tweaks               |nametagtweaks                 |1.5                 |DONE      |Manifest: NOSIGNATURE
+		firstjoinmessage_1.16.5-1.2.jar                   |First Join Message            |firstjoinmessage              |1.2                 |DONE      |Manifest: NOSIGNATURE
+		advancementscreenshot_1.16.5-1.3.jar              |Advancement Screenshot        |advancementscreenshot         |1.3                 |DONE      |Manifest: NOSIGNATURE
+		fallthroughslime_1.16.5-1.3.jar                   |Fall Through Slime            |fallthroughslime              |1.3                 |DONE      |Manifest: NOSIGNATURE
+		smallernetherportals_1.16.5-1.6.jar               |Smaller Nether Portals        |smallernetherportals          |1.6                 |DONE      |Manifest: NOSIGNATURE
+		infinitetrading_1.16.5-1.4.jar                    |Infinite Trading              |infinitetrading               |1.4                 |DONE      |Manifest: NOSIGNATURE
+		strayspawn_1.16.5-1.3.jar                         |Stray Spawn                   |strayspawn                    |1.3                 |DONE      |Manifest: NOSIGNATURE
+		rainbegoneritual_1.16.5-1.4.jar                   |Rain Be Gone Ritual           |rainbegoneritual              |1.4                 |DONE      |Manifest: NOSIGNATURE
+		scaffoldingdropsnearby_1.16.5-1.3.jar             |Scaffolding Drops Nearby      |scaffoldingdropsnearby        |1.3                 |DONE      |Manifest: NOSIGNATURE
+		randombonemealflowers_1.16.5-1.3.jar              |Random Bone Meal Flowers      |randombonemealflowers         |1.3                 |DONE      |Manifest: NOSIGNATURE
+		doubledoors_1.16.5-2.3.jar                        |Double Doors                  |doubledoors                   |2.3                 |DONE      |Manifest: NOSIGNATURE
+		handoveryouritems_1.16.5-1.2.jar                  |Hand Over Your Items          |handoveryouritems             |1.2                 |DONE      |Manifest: NOSIGNATURE
+		transcendingtrident_1.16.5-1.5.jar                |Transcending Trident          |transcendingtrident           |1.5                 |DONE      |Manifest: NOSIGNATURE
+		biggerspongeabsorptionradius_1.16.5-1.3.jar       |Bigger Sponge Absorption Radiu|biggerspongeabsorptionradius  |1.3                 |DONE      |Manifest: NOSIGNATURE
+		treeharvester_1.16.5-2.4.jar                      |Tree Harvester                |treeharvester                 |2.4                 |DONE      |Manifest: NOSIGNATURE
+		giantspawn_1.16.5-2.4.jar                         |Giant Spawn                   |giantspawn                    |2.4                 |DONE      |Manifest: NOSIGNATURE
+		randomshulkercolours_1.16.5-1.1.jar               |Random Shulker Colours        |randomshulkercolours          |1.1                 |DONE      |Manifest: NOSIGNATURE
+		mooshroomtweaks_1.16.5-1.3.jar                    |Mooshroom Tweaks              |mooshroomtweaks               |1.3                 |DONE      |Manifest: NOSIGNATURE
+		justmobheads_1.16.5-4.0.jar                       |Just Mob Heads                |justmobheads                  |4.0                 |DONE      |Manifest: NOSIGNATURE
+		enchantingcommands_1.16.5-1.6.jar                 |Enchanting Commands           |enchantingcommands            |1.6                 |DONE      |Manifest: NOSIGNATURE
+		easyelytratakeoff_1.16.5-1.7.jar                  |Easy Elytra Takeoff           |easyelytratakeoff             |1.7                 |DONE      |Manifest: NOSIGNATURE
+		guicompass_1.16.5-1.5.jar                         |GUI Compass                   |guicompass                    |1.5                 |DONE      |Manifest: NOSIGNATURE
+		respawningshulkers_1.16.5-1.4.jar                 |Respawning Shulkers           |respawningshulkers            |1.4                 |DONE      |Manifest: NOSIGNATURE
+		campfirespawnandtweaks_1.16.5-1.3.jar             |Campfire Spawn and Tweaks     |campfirespawnandtweaks        |1.3                 |DONE      |Manifest: NOSIGNATURE
+		bottleyourxp_1.16.5-1.5.jar                       |Bottle Your Xp                |bottleyourxp                  |1.5                 |DONE      |Manifest: NOSIGNATURE
+		grassseeds_1.16.5-1.4.jar                         |Grass Seeds                   |grassseeds                    |1.4                 |DONE      |Manifest: NOSIGNATURE
+		breedablekillerrabbit_1.16.5-1.4.jar              |Breedable Killer Rabbit       |breedablekillerrabbit         |1.4                 |DONE      |Manifest: NOSIGNATURE
+		passiveendermen_1.16.5-1.4.jar                    |Passive Endermen              |passiveendermen               |1.4                 |DONE      |Manifest: NOSIGNATURE
+		fixedanvilrepaircost_1.16.5-1.4.jar               |Fixed Anvil Repair Cost       |fixedanvilrepaircost          |1.4                 |DONE      |Manifest: NOSIGNATURE
+		dismountentity_1.16.5-1.4.jar                     |Dismount Entity               |dismountentity                |1.4                 |DONE      |Manifest: NOSIGNATURE
+		recast_1.16.5-1.2.jar                             |Recast                        |recast                        |1.2                 |DONE      |Manifest: NOSIGNATURE
+		moveminecarts_1.16.5-1.6.jar                      |Move Minecarts                |moveminecarts                 |1.6                 |DONE      |Manifest: NOSIGNATURE
+		extendedbonemeal_1.16.5-1.3.jar                   |Extended Bone Meal            |extendedbonemeal              |1.3                 |DONE      |Manifest: NOSIGNATURE
+		erodingstoneentities_1.16.5-2.2.jar               |Eroding Stone Entities        |erodingstoneentities          |2.2                 |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.8-universal.jar                 |Forge                         |forge                         |36.2.8              |DONE      |Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		morezombievillagers_1.16.5-1.2.jar                |More Zombie Villagers         |morezombievillagers           |1.2                 |DONE      |Manifest: NOSIGNATURE
+		deathbackup_1.16.5-1.4.jar                        |Death Backup                  |deathbackup                   |1.4                 |DONE      |Manifest: NOSIGNATURE
+		hidehands_1.16.5-1.3.jar                          |Hide Hands                    |hidehands                     |1.3                 |DONE      |Manifest: NOSIGNATURE
+		creativeblockreplacer_1.16.5-1.4.jar              |Creative Block Replacer       |creativeblockreplacer         |1.4                 |DONE      |Manifest: NOSIGNATURE
+		wooltweaks_1.16.5-1.2.jar                         |Wool Tweaks                   |wooltweaks                    |1.2                 |DONE      |Manifest: NOSIGNATURE
+		tntbreaksbedrock_1.16.5-1.5.jar                   |TNT Breaks Bedrock            |tntbreaksbedrock              |1.5                 |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.8-server.jar                    |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		weakerspiderwebs_1.16.5-1.7.jar                   |Weaker Spiderwebs             |weakerspiderwebs              |1.7                 |DONE      |Manifest: NOSIGNATURE
+		nohostilesaroundcampfire_1.16.5-3.3.jar           |No Hostiles Around Campfire   |nohostilesaroundcampfire      |3.3                 |DONE      |Manifest: NOSIGNATURE
+		extractpoison_1.16.5-1.4.jar                      |Extract Poison                |extractpoison                 |1.4                 |DONE      |Manifest: NOSIGNATURE
+		icepreventscropgrowth_1.16.5-1.2.jar              |Ice Prevents Crop Growth      |icepreventscropgrowth         |1.2                 |DONE      |Manifest: NOSIGNATURE
+		inventorytotem_1.16.5-1.3.jar                     |Inventory Totem               |inventorytotem                |1.3                 |DONE      |Manifest: NOSIGNATURE
+		nutritiousmilk_1.16.5-1.4.jar                     |Nutritious Milk               |nutritiousmilk                |1.4                 |DONE      |Manifest: NOSIGNATURE
+		spidersproducewebs_1.16.5-1.3.jar                 |Spiders Produce Webs          |spidersproducewebs            |1.3                 |DONE      |Manifest: NOSIGNATURE
+		mooshroomspawn_1.16.5-1.3.jar                     |Mooshroom Spawn               |mooshroomspawn                |1.3                 |DONE      |Manifest: NOSIGNATURE
+		configurabledespawntimer_1.16.5-2.1.jar           |Configurable Despawn Timer    |configurabledespawntimer      |2.1                 |DONE      |Manifest: NOSIGNATURE
+		moveboats_1.16.5-1.5.jar                          |Move Boats                    |moveboats                     |1.5                 |DONE      |Manifest: NOSIGNATURE
+		justplayerheads_1.16.5-1.6.jar                    |Just Player Heads             |justplayerheads               |1.6                 |DONE      |Manifest: NOSIGNATURE
+		automaticdoors_1.16.5-1.8.jar                     |Automatic Doors               |automaticdoors                |1.8                 |DONE      |Manifest: NOSIGNATURE
+		randomsheepcolours_1.16.5-1.4.jar                 |Random Sheep Colours          |randomsheepcolours            |1.4                 |DONE      |Manifest: NOSIGNATURE
+		dragondropselytra_1.16.5-1.3.jar                  |Dragon Drops Elytra           |dragondropselytra             |1.3                 |DONE      |Manifest: NOSIGNATURE
+		cyclepaintings_1.16.5-1.6.jar                     |Cycle Paintings               |cyclepaintings                |1.6                 |DONE      |Manifest: NOSIGNATURE
+		randomvillagenames_1.16.5-1.1.jar                 |Random Village Names          |randomvillagenames            |1.1                 |DONE      |Manifest: NOSIGNATURE
+		villagebellrecipe_1.16.5-1.1.jar                  |Village Bell Recipe           |villagebellrecipe             |1.1                 |DONE      |Manifest: NOSIGNATURE
+		betterconduitplacement_1.16.5-1.2.jar             |Better Conduit Placement      |betterconduitplacement        |1.2                 |DONE      |Manifest: NOSIGNATURE
+		extendedcreativeinventory_1.16.5-1.2.jar          |Extended Creative Inventory   |extendedcreativeinventory     |1.2                 |DONE      |Manifest: NOSIGNATURE
+		grindstonesharpertools_1.16.5-1.5.jar             |Grindstone Sharper Tools      |grindstonesharpertools        |1.5                 |DONE      |Manifest: NOSIGNATURE
+		healingcampfire_1.16.5-3.2.jar                    |Healing Campfire              |healingcampfire               |3.2                 |DONE      |Manifest: NOSIGNATURE
+		snowballsfreezemobs_1.16.5-1.3.jar                |Snowballs Freeze Mobs         |snowballsfreezemobs           |1.3                 |DONE      |Manifest: NOSIGNATURE
+		guifollowers_1.16.5-1.4.jar                       |GUI Followers                 |guifollowers                  |1.4                 |DONE      |Manifest: NOSIGNATURE
+		alllootdrops_1.16.5-2.2.jar                       |All Loot Drops                |alllootdrops                  |2.2                 |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: ec72b4fc-5ee9-4c5b-a3aa-925bf38903bb
+	Player Count: 1 / 20; [ServerPlayerEntity['ac3po'/228, l='ServerLevel[world]', x=73.59, y=64.94, z=1222.70]]
+	Data Packs: vanilla, mod:endportalrecipe, mod:areas, mod:petnames, mod:superflatworldnoslimes, mod:paperbooks, mod:guiclock, mod:villagernames, mod:realisticbees, mod:villagerdeathmessages, mod:softerhaybales, mod:quickpaths, mod:cryingghasts, mod:skeletonhorsespawn, mod:betterbeaconplacement, mod:kelpfertilizer, mod:stackrefill, mod:mineralchance, mod:despawningeggshatch, mod:recipecommands, mod:replantingcrops, mod:betterspawnercontrol, mod:netherportalspread, mod:zombieproofdoors, mod:edibles, mod:conduitspreventdrowned, mod:fishontheline, mod:villagespawnpoint, mod:omegamute, mod:underwaterenchanting, mod:shulkerdropstwo, mod:naturallychargedcreepers, mod:collective, mod:firespreadtweaks, mod:passiveshield, mod:starterkit, mod:sleepsooner, mod:alwaysawitherskull, mod:nametagtweaks, mod:firstjoinmessage, mod:advancementscreenshot, mod:fallthroughslime, mod:smallernetherportals, mod:infinitetrading, mod:strayspawn, mod:rainbegoneritual, mod:scaffoldingdropsnearby, mod:randombonemealflowers, mod:doubledoors, mod:handoveryouritems, mod:transcendingtrident, mod:biggerspongeabsorptionradius, mod:treeharvester, mod:giantspawn, mod:randomshulkercolours, mod:mooshroomtweaks, mod:justmobheads, mod:enchantingcommands, mod:easyelytratakeoff, mod:guicompass, mod:respawningshulkers, mod:campfirespawnandtweaks, mod:bottleyourxp, mod:grassseeds, mod:breedablekillerrabbit, mod:passiveendermen, mod:fixedanvilrepaircost, mod:dismountentity, mod:recast, mod:moveminecarts, mod:extendedbonemeal, mod:erodingstoneentities, mod:forge, mod:morezombievillagers, mod:deathbackup, mod:hidehands, mod:creativeblockreplacer, mod:wooltweaks, mod:tntbreaksbedrock, mod:weakerspiderwebs, mod:nohostilesaroundcampfire, mod:extractpoison, mod:icepreventscropgrowth, mod:inventorytotem, mod:nutritiousmilk, mod:spidersproducewebs, mod:mooshroomspawn, mod:configurabledespawntimer, mod:moveboats, mod:justplayerheads, mod:automaticdoors, mod:randomsheepcolours, mod:dragondropselytra, mod:cyclepaintings, mod:randomvillagenames, mod:villagebellrecipe, mod:betterconduitplacement, mod:extendedcreativeinventory, mod:grindstonesharpertools, mod:healingcampfire, mod:snowballsfreezemobs, mod:guifollowers, mod:alllootdrops, mod:milkallthemobs, mod:huskspawn, mod:zombiehorsespawn
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

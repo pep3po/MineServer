@@ -1,0 +1,116 @@
+[15oct2021 19:19:20.269] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 36.2.8, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge]
+[15oct2021 19:19:20.274] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_281 by Oracle Corporation
+[15oct2021 19:19:20.927] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[15oct2021 19:19:20.966] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/carlo/Desktop/ServerVanilla/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=SERVER
+[15oct2021 19:19:22.319] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, .]
+[15oct2021 19:19:29.171] [modloading-worker-8/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.8, for MC 1.16.5 with MCP 20210115.111550
+[15oct2021 19:19:29.195] [modloading-worker-8/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.8 Initialized
+[15oct2021 19:19:29.305] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `sponge`, expected `biggerspongeabsorptionradius`. This could be a intended override, but in most cases indicates a broken mod.
+[15oct2021 19:19:29.316] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `trident`, expected `transcendingtrident`. This could be a intended override, but in most cases indicates a broken mod.
+[15oct2021 19:19:29.316] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `sponge`, expected `biggerspongeabsorptionradius`. This could be a intended override, but in most cases indicates a broken mod.
+[15oct2021 19:19:29.322] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object spawner has been registered twice for the same name minecraft:spawner.
+[15oct2021 19:19:29.323] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object dragon_egg has been registered twice for the same name minecraft:dragon_egg.
+[15oct2021 19:19:29.323] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object command_block has been registered twice for the same name minecraft:command_block.
+[15oct2021 19:19:29.323] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object barrier has been registered twice for the same name minecraft:barrier.
+[15oct2021 19:19:29.324] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object repeating_command_block has been registered twice for the same name minecraft:repeating_command_block.
+[15oct2021 19:19:29.325] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object chain_command_block has been registered twice for the same name minecraft:chain_command_block.
+[15oct2021 19:19:29.325] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object structure_void has been registered twice for the same name minecraft:structure_void.
+[15oct2021 19:19:29.325] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object structure_block has been registered twice for the same name minecraft:structure_block.
+[15oct2021 19:19:29.326] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object jigsaw has been registered twice for the same name minecraft:jigsaw.
+[15oct2021 19:19:29.326] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object filled_map has been registered twice for the same name minecraft:filled_map.
+[15oct2021 19:19:29.328] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object written_book has been registered twice for the same name minecraft:written_book.
+[15oct2021 19:19:29.328] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object enchanted_book has been registered twice for the same name minecraft:enchanted_book.
+[15oct2021 19:19:29.330] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object command_block_minecart has been registered twice for the same name minecraft:command_block_minecart.
+[15oct2021 19:19:29.331] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object knowledge_book has been registered twice for the same name minecraft:knowledge_book.
+[15oct2021 19:19:29.332] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object debug_stick has been registered twice for the same name minecraft:debug_stick.
+[15oct2021 19:19:29.332] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: The object suspicious_stew has been registered twice for the same name minecraft:suspicious_stew.
+[15oct2021 19:19:29.676] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[15oct2021 19:19:30.701] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 36.2.8 Target: null
+[15oct2021 19:19:31.955] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15oct2021 19:19:32.864] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [jmh, head, list] and [jmh, head, mob-name] with inputs: [list]
+[15oct2021 19:19:32.866] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [jph, cache] and [jph, name] with inputs: [cache]
+[15oct2021 19:19:32.893] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15oct2021 19:19:32.895] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15oct2021 19:19:32.900] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15oct2021 19:19:32.911] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15oct2021 19:19:32.923] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15oct2021 19:19:32.933] [main/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, doubledoors_1.16.5-2.3 - copia.jar, handoveryouritems_1.16.5-1.2 - copia.jar, endportalrecipe_1.16.5-2.3 - copia.jar, transcendingtrident_1.16.5-1.5 - copia.jar, areas_1.16.5-2.2 - copia.jar, biggerspongeabsorptionradius_1.16.5-1.3 - copia.jar, treeharvester_1.16.5-2.4 - copia.jar, milkallthemobs_1.16.5-1.4 - copia.jar, petnames_1.16.5-1.4 - copia.jar, giantspawn_1.16.5-2.4 - copia.jar, superflatworldnoslimes_1.16.5-1.3 - copia.jar, randomshulkercolours_1.16.5-1.1 - copia.jar, paperbooks_1.16.5-1.2 - copia.jar, justmobheads_1.16.5-4.0 - copia.jar, enchantingcommands_1.16.5-1.6 - copia.jar, guiclock_1.16.5-2.3 - copia.jar, villagernames_1.16.5-2.9 - copia.jar, realisticbees_1.16.5-1.2 - copia.jar, villagerdeathmessages_1.16.5-1.8 - copia.jar, easyelytratakeoff_1.16.5-1.7 - copia.jar, guicompass_1.16.5-1.5 - copia.jar, softerhaybales_1.16.5-1.3 - copia.jar, quickpaths_1.16.5-1.5 - copia.jar, campfirespawnandtweaks_1.16.5-1.3 - copia.jar, bottleyourxp_1.16.5-1.5 - copia.jar, grassseeds_1.16.5-1.4 - copia.jar, cryingghasts_1.16.5-1.3 - copia.jar, skeletonhorsespawn_1.16.5-1.6 - copia.jar, betterbeaconplacement_1.16.5-1.3 - copia.jar, kelpfertilizer_1.16.5-1.4 - copia.jar, fixedanvilrepaircost_1.16.5-1.4 - copia.jar, dismountentity_1.16.5-1.4 - copia.jar, recast_1.16.5-1.2 - copia.jar, moveminecarts_1.16.5-1.6 - copia.jar, huskspawn_1.16.5-1.3 - copia.jar, extendedbonemeal_1.16.5-1.3 - copia.jar, erodingstoneentities_1.16.5-2.2 - copia.jar, forge-1.16.5-36.2.8-universal.jar, stackrefill_1.16.5-1.7 - copia.jar, mineralchance_1.16.5-1.3 - copia.jar, morezombievillagers_1.16.5-1.2 - copia.jar, deathbackup_1.16.5-1.4 - copia.jar, recipecommands_1.16.5-1.1 - copia.jar, hidehands_1.16.5-1.3 - copia.jar, wooltweaks_1.16.5-1.2 - copia.jar, tntbreaksbedrock_1.16.5-1.5 - copia.jar, replantingcrops_1.16.5-2.2 - copia.jar, weakerspiderwebs_1.16.5-1.7 - copia.jar, nohostilesaroundcampfire_1.16.5-3.3 - copia.jar, netherportalspread_1.16.5-5.1 - copia.jar, extractpoison_1.16.5-1.4 - copia.jar, icepreventscropgrowth_1.16.5-1.2 - copia.jar, inventorytotem_1.16.5-1.3 - copia.jar, nutritiousmilk_1.16.5-1.4 - copia.jar, spidersproducewebs_1.16.5-1.3 - copia.jar, zombieproofdoors_1.16.5-1.2 - copia.jar, edibles_1.16.5-2.2 - copia.jar, conduitspreventdrowned_1.16.5-1.2 - copia.jar, fishontheline_1.16.5-1.1 - copia.jar, configurabledespawntimer_1.16.5-2.1 - copia.jar, villagespawnpoint_1.16.5-1.5 - copia.jar, omegamute_1.16.5-1.7 - copia.jar, moveboats_1.16.5-1.5 - copia.jar, underwaterenchanting_1.16.5-1.3 - copia.jar, justplayerheads_1.16.5-1.6 - copia.jar, automaticdoors_1.16.5-1.8 - copia.jar, randomsheepcolours_1.16.5-1.4 - copia.jar, shulkerdropstwo_1.16.5-1.4 - copia.jar, naturallychargedcreepers_1.16.5-1.4 - copia.jar, collective-1.16.5-2.24 - copia.jar, dragondropselytra_1.16.5-1.3 - copia.jar, cyclepaintings_1.16.5-1.6 - copia.jar, randomvillagenames_1.16.5-1.1 - copia.jar, firespreadtweaks_1.16.5-1.1 - copia.jar, villagebellrecipe_1.16.5-1.1 - copia.jar, passiveshield_1.16.5-1.3 - copia.jar, betterconduitplacement_1.16.5-1.2 - copia.jar, starterkit_1.16.5-2.4 - copia.jar, sleepsooner_1.16.5-2.4 - copia.jar, alwaysawitherskull_1.16.5-1.3 - copia.jar, nametagtweaks_1.16.5-1.5 - copia.jar, firstjoinmessage_1.16.5-1.2 - copia.jar, extendedcreativeinventory_1.16.5-1.2 - copia.jar, advancementscreenshot_1.16.5-1.3 - copia.jar, fallthroughslime_1.16.5-1.3 - copia.jar, smallernetherportals_1.16.5-1.6 - copia.jar, infinitetrading_1.16.5-1.4 - copia.jar, strayspawn_1.16.5-1.3 - copia.jar, rainbegoneritual_1.16.5-1.4 - copia.jar, grindstonesharpertools_1.16.5-1.5 - copia.jar, scaffoldingdropsnearby_1.16.5-1.3 - copia.jar, healingcampfire_1.16.5-3.2 - copia.jar, randombonemealflowers_1.16.5-1.3 - copia.jar, snowballsfreezemobs_1.16.5-1.3 - copia.jar, guifollowers_1.16.5-1.4 - copia.jar, alllootdrops_1.16.5-2.2 - copia.jar
+[15oct2021 19:19:33.916] [Worker-Main-14/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[15oct2021 19:19:35.408] [Worker-Main-14/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[15oct2021 19:19:37.720] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.16.5
+[15oct2021 19:19:37.721] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[15oct2021 19:19:37.777] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[15oct2021 19:19:37.791] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[15oct2021 19:19:37.924] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[15oct2021 19:19:37.946] [Server thread/INFO] [net.minecraft.network.NetworkSystem/]: Using default channel type
+[15oct2021 19:19:38.467] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world1"
+[15oct2021 19:19:38.764] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@49331d32
+[15oct2021 19:19:39.676] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[15oct2021 19:19:40.100] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[15oct2021 19:19:40.192] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[15oct2021 19:19:40.657] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 974 ms
+[15oct2021 19:19:40.657] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (2.232s)! For help, type "help"
+[15oct2021 19:30:56.727] [User Authenticator #1/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player peptio96 is cc115257-3a00-4ba7-a731-be077dd47d7f
+[15oct2021 19:30:58.197] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@70c28ac
+[15oct2021 19:30:58.208] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: peptio96[/0:0:0:0:0:0:0:1:65407] logged in with entity id 213 at (-297.688906993633, 68.0, 5108.109331954708)
+[15oct2021 19:30:58.219] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 joined the game
+[15oct2021 19:30:59.348] [Server thread/WARN] [net.minecraft.world.chunk.Chunk/]: Wrong location! (-20, 329) should be (-21, 329), SkeletonEntity['Skeleton'/460, l='ServerLevel[world1]', x=-319.51, y=70.60, z=5268.49]
+[15oct2021 19:30:59.348] [Server thread/WARN] [net.minecraft.world.server.ServerWorld/]: Trying to add entity with duplicated UUID c61b418f-16cb-459a-bc11-8313d4e731cb. Existing minecraft:skeleton#459, new: minecraft:skeleton#460
+[15oct2021 19:32:19.473] [User Authenticator #2/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player ac3po is 12428bef-4fe3-4773-82a3-893827694ba2
+[15oct2021 19:32:20.638] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@6f3bada0
+[15oct2021 19:32:20.645] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: ac3po[/127.0.0.1:65524] logged in with entity id 646 at (-294.0969253866312, 68.0, 5108.584146859648)
+[15oct2021 19:32:20.647] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po joined the game
+[15oct2021 19:38:22.383] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 has made the advancement [Ice Bucket Challenge]
+[15oct2021 19:39:19.533] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 has made the advancement [Who is Cutting Onions?]
+[15oct2021 19:52:47.189] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 has made the advancement [We Need to Go Deeper]
+[15oct2021 19:56:23.938] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [We Need to Go Deeper]
+[15oct2021 19:58:39.625] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [A Terrible Fortress]
+[15oct2021 19:58:50.175] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 has made the advancement [A Terrible Fortress]
+[15oct2021 19:59:08.158] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po was fireballed by Blaze
+[15oct2021 20:00:23.575] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [Take Aim]
+[15oct2021 20:01:01.976] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: peptio96 lost connection: Disconnected
+[15oct2021 20:01:01.977] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 left the game
+[15oct2021 20:02:04.915] [User Authenticator #3/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player peptio96 is cc115257-3a00-4ba7-a731-be077dd47d7f
+[15oct2021 20:02:06.285] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@11205422
+[15oct2021 20:02:06.293] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: peptio96[/0:0:0:0:0:0:0:1:64172] logged in with entity id 8298 at (-69.69999998807909, 63.0, 625.1761897211785)
+[15oct2021 20:02:06.296] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 joined the game
+[15oct2021 20:02:52.575] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po was slain by Wither Skeleton
+[15oct2021 20:03:14.326] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: peptio96 lost connection: Disconnected
+[15oct2021 20:03:14.327] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 left the game
+[15oct2021 20:03:49.925] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [Spooky Scary Skeleton]
+[15oct2021 20:04:04.954] [User Authenticator #4/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player peptio96 is cc115257-3a00-4ba7-a731-be077dd47d7f
+[15oct2021 20:04:06.329] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@6bb4f729
+[15oct2021 20:04:06.334] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: peptio96[/0:0:0:0:0:0:0:1:64178] logged in with entity id 9315 at (-71.05063658746576, 63.0, 641.7464373206856)
+[15oct2021 20:04:06.336] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 joined the game
+[15oct2021 20:07:15.156] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 was slain by Wither Skeleton
+[15oct2021 20:28:12.198] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <peptio96> zzzz
+[15oct2021 20:28:14.542] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <peptio96> ZZZZZZ
+[15oct2021 21:04:12.677] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [A Seedy Place]
+[15oct2021 21:05:08.373] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [The Parrots and the Bats]
+[15oct2021 21:07:40.051] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: peptio96 moved wrongly!
+[15oct2021 21:14:35.480] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: ac3po lost connection: Disconnected
+[15oct2021 21:14:35.480] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po left the game
+[15oct2021 21:14:45.104] [User Authenticator #5/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player ac3po is 12428bef-4fe3-4773-82a3-893827694ba2
+[15oct2021 21:14:46.283] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@7020953d
+[15oct2021 21:14:46.289] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: ac3po[/127.0.0.1:64490] logged in with entity id 24092 at (-738.7513832019828, 72.0, 5234.444568539055)
+[15oct2021 21:14:46.290] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po joined the game
+[15oct2021 21:20:11.782] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po burned to death
+[15oct2021 21:25:57.101] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ac3po> SZZZZZZZ
+[15oct2021 21:28:58.225] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po has made the advancement [Ice Bucket Challenge]
+[15oct2021 21:39:42.124] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 has made the advancement [Hot Stuff]
+[15oct2021 21:47:53.432] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: peptio96 lost connection: Disconnected
+[15oct2021 21:47:53.432] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: peptio96 left the game
+[15oct2021 21:51:24.629] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: ac3po lost connection: Disconnected
+[15oct2021 21:51:24.630] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ac3po left the game
+[15oct2021 21:51:28.719] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[15oct2021 21:51:28.720] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[15oct2021 21:51:28.724] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[15oct2021 21:51:28.724] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world1]'/minecraft:overworld
+[15oct2021 21:51:28.794] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world1): All chunks are saved
+[15oct2021 21:51:28.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world1]'/minecraft:the_nether
+[15oct2021 21:51:28.800] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15oct2021 21:51:28.800] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world1]'/minecraft:the_end
+[15oct2021 21:51:28.802] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15oct2021 21:51:28.818] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world1): All chunks are saved
+[15oct2021 21:51:28.850] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15oct2021 21:51:28.860] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
